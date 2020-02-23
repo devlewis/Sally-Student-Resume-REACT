@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sally Student Resume</title>
+  </head>
+  <body>
+    <div id="application-root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      function App() {
+        return (
+          <div>
+            <header>
+              <h1> Sally Singer </h1>
+              <h5>lieder, opera, musical theater</h5>
+            </header>
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg"
+              alt="Sally Singer headshot"
+            />
+            <h3>Contact</h3>
+            <address>
+              Sally Singer: 1111 Wheelbarrow Ln, Dallas, TX
+              <br></br>
+              <ul>
+                <li>
+                  <a href="email:devree.lewis@gmail.com" target="_Blank">
+                    sally.singer@gmail.com
+                  </a>
+                </li>
+                <li>806-555-5881</li>
+                <li>806-555-1039</li>
+                <li>
+                  <a href="devreelewis.com" target="_Blank">
+                    {" "}
+                    sallysinger.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <br></br>
+            <main>
+              <section>
+                <h2>Education</h2>
+                <p>University of Houston, Masters in Music Performance: 2007</p>
+                <p>University of Texas, Bachelor in Music: 2005</p>
+              </section>
+              <br></br>
+              <section>
+                <h2>Recent Professional Work</h2>
+                <ul>
+                  <li>
+                    <h4>Houston Lyric Opera</h4>
+                    <p>
+                      Soprano, <em>2013-present</em>
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In dapibus nisl eu leo sagittis, quis mattis dolor auctor.
+                      Donec nec rhoncus arcu. Aenean vulputate lectus.
+                    </p>
+                  </li>
+                  <li>
+                    <h4>Dallas Master Opera</h4>
+                    <p>
+                      Soprano and arts administrator, <em>2008-2013</em>
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In dapibus nisl eu leo sagittis, quis mattis dolor auctor.
+                      Donec nec rhoncus arcu. Aenean vulputate lectus.
+                    </p>
+                  </li>
+                </ul>
+              </section>
+            </main>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.querySelector("#application-root"));
+    </script>
+  </body>
+</html>
